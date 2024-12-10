@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\MyCodingSpace\\SignalRTUT\\SignalRPushNotificationDemo\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SignalRPushNotificationDemo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SignalRPushNotificationDemo.props",
+      "PackagePath": "build\\SignalRPushNotificationDemo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SignalRPushNotificationDemo.props",
+      "PackagePath": "buildMultiTargeting\\SignalRPushNotificationDemo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SignalRPushNotificationDemo.props",
+      "PackagePath": "buildTransitive\\SignalRPushNotificationDemo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

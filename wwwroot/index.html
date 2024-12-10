@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SignalR Notification Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.0/signalr.min.js"></script>
+</head>
+<body>
+    <h1>SignalR Push Notification</h1>
+    <input type="text" id="messageInput" placeholder="Enter your message" />
+    <button onclick="sendNotification()">Send Notification</button>
+    <ul id="messagesList"></ul>
+
+    <script>
+        // Connect to the SignalR Hub
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/notificationHub")
+            .build();
+
+        // Start the connection
+        connection.start()
+            .then(() => console.log("Connected to SignalR Hub"))
+            .catch(err => console.error(err.toString()));
+
+        // Receive notification from the server
+        connection.on("ReceiveNotification", (objcet) => {
+            const li = document.createElement("li");
+            li.textContent = `${objcet.statusCode} - ${objcet.message}`;
+            document.getElementById("messagesList").appendChild(li);
+        });
+
+        // Send notification to the server
+        function sendNotification() {
+            const message = document.getElementById("messageInput").value;
+            connection.invoke("SendNotification", message)
+                .catch(err => console.error(err.toString()));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "wvRGgw4eTujuxwvWAvddAEBRMZ+HEsaMqH4sblu/41k=",
+  "Source": "SignalRPushNotificationDemo",
+  "BasePath": "_content/SignalRPushNotificationDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SignalRPushNotificationDemo\\wwwroot",
+      "Source": "SignalRPushNotificationDemo",
+      "ContentRoot": "D:\\MyCodingSpace\\SignalRTUT\\SignalRPushNotificationDemo\\wwwroot\\",
+      "BasePath": "_content/SignalRPushNotificationDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\MyCodingSpace\\SignalRTUT\\SignalRPushNotificationDemo\\wwwroot\\index.html",
+      "SourceId": "SignalRPushNotificationDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MyCodingSpace\\SignalRTUT\\SignalRPushNotificationDemo\\wwwroot\\",
+      "BasePath": "_content/SignalRPushNotificationDemo",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
